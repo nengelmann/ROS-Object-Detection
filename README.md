@@ -13,9 +13,10 @@ Extract and publish objects from a ROS video stream.
 - [foxglove_msgs](https://index.ros.org/p/foxglove_msgs/) \
 ```sudo apt install ros-humble-foxglove-msgs```
 
-'sudo apt install ros-humble-vision-msgs' ?
-
-
+## Clone repo
+```bash
+git clone https://github.com/nengelmann/ROS-Object-Detection.git && cd ROS-Object-Detection
+```
 ## Download yolov3 weights
 
 Download yolov3 weights, config and class names from [here](https://opencv-tutorial.readthedocs.io/en/latest/yolo/yolo.html) and paste them into `./src/objectdetection/model` via command line.
@@ -43,10 +44,15 @@ ros2 run objectdetection node
 
 Run the Foxglove bridge (separate terminal):
 ```bash
+source /opt/ros/humble/setup.bash
 ros2 launch foxglove_bridge foxglove_bridge_launch.xml
 ```
 
-Run the ros bag (separate terminal):
+Open `foxglove-studio`, connect via WebSocket URL to default `ws://localhost:8765` and import `foxglove_studio_layout.json`
+
+
+Then run the ros bag (separate terminal):
 ```bash
+source /opt/ros/humble/setup.bash
 ros2 bag play /path/to/data/lounge/
 ```
