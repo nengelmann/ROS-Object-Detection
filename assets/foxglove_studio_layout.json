@@ -1,69 +1,5 @@
 {
   "configById": {
-    "Image!2a0b086": {
-      "cameraState": {
-        "distance": 20,
-        "perspective": true,
-        "phi": 60,
-        "target": [
-          0,
-          0,
-          0
-        ],
-        "targetOffset": [
-          0,
-          0,
-          0
-        ],
-        "targetOrientation": [
-          0,
-          0,
-          0,
-          1
-        ],
-        "thetaOffset": 45,
-        "fovy": 45,
-        "near": 0.5,
-        "far": 5000
-      },
-      "followMode": "follow-pose",
-      "scene": {
-        "transforms": {
-          "editable": true,
-          "showLabel": true
-        }
-      },
-      "transforms": {},
-      "topics": {
-        "/initialpose": {
-          "type": "axis",
-          "showCovariance": true
-        },
-        "/move_base_simple/goal": {
-          "type": "axis"
-        }
-      },
-      "layers": {},
-      "publish": {
-        "type": "point",
-        "poseTopic": "/move_base_simple/goal",
-        "pointTopic": "/clicked_point",
-        "poseEstimateTopic": "/initialpose",
-        "poseEstimateXDeviation": 0.5,
-        "poseEstimateYDeviation": 0.5,
-        "poseEstimateThetaDeviation": 0.26179939
-      },
-      "imageMode": {
-        "imageTopic": "/d455_1_rgb_image",
-        "synchronize": true,
-        "annotations": {
-          "/d455_1_rgb_image/detected_objects": {
-            "visible": true
-          }
-        },
-        "colorMode": "colormap"
-      }
-    },
     "SourceInfo!1f94h5s": {},
     "RawMessages!4kdcs30": {
       "diffEnabled": false,
@@ -141,6 +77,56 @@
       "hardwareIdFilter": "",
       "topicToRender": "/diagnostics",
       "sortByLevel": true
+    },
+    "Image!3em8cni": {
+      "cameraState": {
+        "distance": 20,
+        "perspective": true,
+        "phi": 60,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 45,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {},
+      "transforms": {},
+      "topics": {},
+      "layers": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {
+        "imageTopic": "/d455_1_rgb_image",
+        "annotations": {
+          "/d455_1_rgb_image/detected_objects": {
+            "visible": true
+          }
+        },
+        "synchronize": true
+      }
     }
   },
   "globalVariables": {},
@@ -150,10 +136,9 @@
   },
   "layout": {
     "first": {
-      "first": "Image!2a0b086",
+      "first": "Image!3em8cni",
       "second": "SourceInfo!1f94h5s",
-      "direction": "column",
-      "splitPercentage": 67.66409266409266
+      "direction": "column"
     },
     "second": {
       "first": "RawMessages!4kdcs30",

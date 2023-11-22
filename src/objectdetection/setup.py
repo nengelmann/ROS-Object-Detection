@@ -1,30 +1,26 @@
 from setuptools import setup
 
-package_name = 'objectdetection'
+package_name = "objectdetection"
 
 setup(
     name=package_name,
-    version='0.0.0',
+    version="0.0.0",
     packages=[package_name],
     data_files=[
-        ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name, ['./model/coco.names']),
-        ('share/' + package_name, ['./model/yolov3.cfg']),
-        ('share/' + package_name, ['./model/yolov3.weights']),
-        
+        ("share/" + package_name, ["package.xml"]),
+        ("share/" + package_name, ["./model/coco.names"]),
+        ("share/" + package_name, ["./model/yolov3.cfg"]),
+        ("share/" + package_name, ["./model/yolov3.weights"]),
     ],
-    install_requires=['setuptools'],
+    install_requires=["setuptools"],
     zip_safe=True,
-    maintainer='Your Name',
-    maintainer_email='youremail@example.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
-    tests_require=['pytest'],
+    maintainer="nengelmann",
+    maintainer_email="mail@nico-engelmann.de",
+    description="ROS2 package for object detection using YOLOv3",
+    license="MIT",
     entry_points={
-        'console_scripts': [
-            'talker = objectdetection.publisher_member_function:main',
-            'listener = objectdetection.subscriber_member_function:main',
-            'node = objectdetection.node:main',
+        "console_scripts": [
+            "node = objectdetection.node:main",
         ],
     },
 )
