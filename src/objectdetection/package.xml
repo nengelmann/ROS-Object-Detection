@@ -3,7 +3,7 @@
 <package format="3">
   <name>objectdetection</name>
   <version>0.0.0</version>
-  <description>Object detection node to extract and publish objects from a ROS video stream.</description>
+  <description>ROS2 node for object detection with YOLOv3.</description>
   <maintainer email="mail@nico-engelmann.de">nengelmann</maintainer>
   <license>MIT</license>
 
