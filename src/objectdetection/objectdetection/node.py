@@ -16,11 +16,14 @@ from .model import YOLOv3
 
 
 class ObjectDetectionNode(Node):
+    """
+    Node for object detection using YOLOv3.
+    """
     def __init__(self, min_bbox_area=400, min_bbox_side=25, debug=False):
         super().__init__("objectdetection_node")
         self.publisher_ = self.create_publisher(
             ImageAnnotations, "/d455_1_rgb_image/detected_objects", 10
-        )  # was: Detections, Detection2DArray, ImageMarkerArray
+        )
         self.subscription = self.create_subscription(
             Image, "/d455_1_rgb_image", self.listener_callback, 10
         )
@@ -35,6 +38,7 @@ class ObjectDetectionNode(Node):
         print("Object detection node started and active.")
 
     def listener_callback(self, msg):
+        """Process image and publish detected objects."""
         # Convert ROS Image message to OpenCV image
         img = self.bridge.imgmsg_to_cv2(msg, desired_encoding="passthrough")
         timestamp = msg.header.stamp

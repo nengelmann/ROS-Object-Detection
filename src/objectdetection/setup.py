@@ -16,7 +16,7 @@ setup(
     zip_safe=True,
     maintainer="nengelmann",
     maintainer_email="mail@nico-engelmann.de",
-    description="ROS2 package for object detection using YOLOv3",
+    description="ROS2 node for object detection using YOLOv3",
     license="MIT",
     entry_points={
         "console_scripts": [

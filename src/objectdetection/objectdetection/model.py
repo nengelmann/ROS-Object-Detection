@@ -1,4 +1,5 @@
-import os
+#!/usr/bin/env python3
+
 import time
 from pathlib import Path
 
@@ -114,6 +115,7 @@ class YOLOv3:
         return blob
 
     def post_process(self, img, outputs):
+        """Postprocess image and network outputs for object detection."""
         H, W = img.shape[:2]
 
         boxes = []
