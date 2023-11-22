@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "source ROS2 environment",
+            "type": "shell",
+            "command": "source /opt/ros/humble/setup.bash && source ./install/setup.bash",
+            "problemMatcher": []
+        }
+    ]
+}

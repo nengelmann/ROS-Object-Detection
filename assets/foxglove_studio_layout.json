@@ -1,0 +1,167 @@
+{
+  "configById": {
+    "Image!2a0b086": {
+      "cameraState": {
+        "distance": 20,
+        "perspective": true,
+        "phi": 60,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 45,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {
+        "transforms": {
+          "editable": true,
+          "showLabel": true
+        }
+      },
+      "transforms": {},
+      "topics": {
+        "/initialpose": {
+          "type": "axis",
+          "showCovariance": true
+        },
+        "/move_base_simple/goal": {
+          "type": "axis"
+        }
+      },
+      "layers": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {
+        "imageTopic": "/d455_1_rgb_image",
+        "synchronize": true,
+        "annotations": {
+          "/d455_1_rgb_image/detected_objects": {
+            "visible": true
+          }
+        },
+        "colorMode": "colormap"
+      }
+    },
+    "SourceInfo!1f94h5s": {},
+    "RawMessages!4kdcs30": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "/d455_1_rgb_image/detected_objects",
+      "expansion": {
+        "markers": "e",
+        "0~markers": "e",
+        "header~0~markers": "e",
+        "stamp~header~0~markers": "e",
+        "position~0~markers": "e",
+        "outline_color~0~markers": "e",
+        "fill_color~0~markers": "e",
+        "lifetime~0~markers": "e",
+        "points~0~markers": "e",
+        "0~points~0~markers": "e",
+        "1~points~0~markers": "e",
+        "2~points~0~markers": "e",
+        "3~points~0~markers": "e",
+        "outline_colors~0~markers": "e",
+        "1~markers": "e",
+        "header~1~markers": "e",
+        "stamp~header~1~markers": "e",
+        "position~1~markers": "e",
+        "outline_color~1~markers": "e",
+        "fill_color~1~markers": "e",
+        "lifetime~1~markers": "e",
+        "points~1~markers": "e",
+        "0~points~1~markers": "e",
+        "1~points~1~markers": "e",
+        "2~points~1~markers": "e",
+        "3~points~1~markers": "e",
+        "outline_colors~1~markers": "e",
+        "2~markers": "e",
+        "header~2~markers": "e",
+        "stamp~header~2~markers": "e",
+        "position~2~markers": "e",
+        "outline_color~2~markers": "e",
+        "fill_color~2~markers": "e",
+        "lifetime~2~markers": "e",
+        "points~2~markers": "e",
+        "0~points~2~markers": "e",
+        "1~points~2~markers": "e",
+        "2~points~2~markers": "e",
+        "3~points~2~markers": "e",
+        "outline_colors~2~markers": "e",
+        "points~0~points": "c",
+        "outline_color~0~points": "c",
+        "fill_color~0~points": "c",
+        "timestamp~1~points": "c",
+        "points~1~points": "c",
+        "1~points": "c",
+        "background_color~0~texts": "c",
+        "timestamp~0~texts": "c",
+        "position~0~texts": "c",
+        "text_color~0~texts": "c",
+        "timestamp~1~texts": "c",
+        "position~1~texts": "c",
+        "text_color~1~texts": "c",
+        "background_color~1~texts": "c",
+        "timestamp~0~points": "c",
+        "0~points": "c",
+        "points": "e",
+        "texts": "e",
+        "1~texts": "e",
+        "outline_color~1~points": "c",
+        "fill_color~1~points": "c"
+      }
+    },
+    "DiagnosticSummary!5ijzi9": {
+      "minLevel": 0,
+      "pinnedIds": [],
+      "hardwareIdFilter": "",
+      "topicToRender": "/diagnostics",
+      "sortByLevel": true
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "first": {
+      "first": "Image!2a0b086",
+      "second": "SourceInfo!1f94h5s",
+      "direction": "column",
+      "splitPercentage": 67.66409266409266
+    },
+    "second": {
+      "first": "RawMessages!4kdcs30",
+      "second": "DiagnosticSummary!5ijzi9",
+      "direction": "column",
+      "splitPercentage": 67.76061776061776
+    },
+    "direction": "row",
+    "splitPercentage": 73.29615861214374
+  }
+}
