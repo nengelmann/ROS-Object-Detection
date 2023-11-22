@@ -48,11 +48,11 @@ source /opt/ros/humble/setup.bash
 ros2 launch foxglove_bridge foxglove_bridge_launch.xml
 ```
 
-Open `foxglove-studio`, connect via WebSocket URL to default `ws://localhost:8765` and import `foxglove_studio_layout.json`
-
-
 Then run the ros bag (separate terminal):
 ```bash
 source /opt/ros/humble/setup.bash
 ros2 bag play /path/to/data/lounge/
 ```
+
+Press SPACE for pause, open `foxglove-studio`, connect via WebSocket URL to default `ws://localhost:8765` and import `./assets/foxglove_studio_layout.json`.
+The hit SPACE again resume.
